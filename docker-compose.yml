@@ -1,0 +1,50 @@
+services:
+
+  frontend:
+    build:
+      context: ./my-app-react 
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"
+    networks:
+      - app-network
+
+  backend:
+    build:
+      context: ./my-backend-express 
+      dockerfile: Dockerfile
+    ports:      
+      - "3001:3001" # HTTPS
+    volumes:
+      - ./my-backend-express/certs:/app/certs
+    environment:
+      - DB_HOST=postgres
+      - DB_USER=postgres
+      - DB_DATABASE=FitnessDev_db
+      - DB_PASSWORD
+      - DB_PORT=5432
+    depends_on:
+      - postgres
+    networks:
+      - app-network
+
+  postgres:
+    image: postgres:17
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD
+      - POSTGRES_DB=FitnessDev_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./my-backend-express/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  postgres_data:

@@ -1,0 +1,15 @@
+# Ignore les fichiers/dossiers de Node.js
+node_modules/
+.env
+
+# Ignore les fichiers de build (si applicable)
+dist/
+build/
+
+# Ignore les fichiers de configuration locaux
+*.log
+*.bak
+
+# Ignore les fichiers IDE/éditeurs (exemple)
+.vscode/
+.idea/

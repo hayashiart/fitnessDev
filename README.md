@@ -28,26 +28,33 @@ Welcome to FitnessDev, a comprehensive web application for managing gym registra
 ![Home Page](images/home2.png)
 
 - **Registration and Login**: Users can register with an email, password, and reCAPTCHA validation, then log in to access features.
+
   ![Sign-Up Page](images/inscription.png)
-  *Image: Sign-up interface*
+  
 - **Subscription Management**: Three plans (ESSENTIAL, ORIGINAL, ULTRA) with customizable options, payment processing, and active subscription verification.
+
   ![Subscription Page](images/abonnement.png)
-  *Image: Subscription page*
+  
 - **Classes and Coaches**: Display of available classes with specialized coaches (e.g., Boxing, Zumba).
+
   ![Classes Page](images/cours.png)
-  *Image: List of classes*
+  
 - **Product Purchases**: Ability to buy products (e.g., protein, drinks) with transaction tracking.
+
   ![Purchase Page](images/shop.png)
-  *Image: Purchase page*
+  
 - **User Reviews**: Logged-in users can add and view reviews stored in Firestore.
+
   ![Reviews Page](images/home3.png)
-  *Image: Reviews section*
+  
 - **User Profile**: User can check his profile and change his informations, subscription, purchases and courses
+
   ![Profile Page](images/profile.png)
-  *Image: Profile section*
+  
 - **Contact Pagee**: User can send contact message
+
   ![Profile Page](images/contact.png)
-  *Image: Contact section*
+  
 
 ## Prerequisites
 - **Node.js** (version 23 or higher): [Download](https://nodejs.org/)

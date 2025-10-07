@@ -1,15 +1,16 @@
 # Ignore les fichiers/dossiers de Node.js
 node_modules/
 .env
+.env:Zone.Identifier
 
-# Ignore les fichiers de build (si applicable)
+# Ignore les fichiers de build
 dist/
 build/
 
-# Ignore les fichiers de configuration locaux
+# Ignore les fichiers locaux
 *.log
 *.bak
 
-# Ignore les fichiers IDE/éditeurs (exemple)
+# Ignore les fichiers IDE
 .vscode/
 .idea/

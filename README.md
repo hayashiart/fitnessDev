@@ -49,7 +49,7 @@ Welcome to FitnessDev, a comprehensive web application for managing gym registra
   
 - **User Profile**: User can check his profile and change his informations, subscription, purchases and courses
 
-  ![Profile Page](images/profile.png)
+  ![Profile Page](images/profil.png)
   
 - **Contact Pagee**: User can send contact message
 
@@ -62,19 +62,6 @@ Welcome to FitnessDev, a comprehensive web application for managing gym registra
 - **Git**: To clone the repository.
 - Access to a Google Cloud/Firestore console and a PostgreSQL server (via Docker or local).
 
-## Project Structure
-```
-fitnessDev/
-├── my-app-react/          # Frontend (React application)
-│   ├── src/               # Source files (components, pages, etc.)
-│   ├── public/            # Static assets (images, etc.)
-│   └── .env               # Frontend environment variables
-├── my-backend-express/    # Backend (Express API)
-│   ├── src/               # Source files (routes, controllers, etc.)
-│   └── .env               # Backend environment variables
-├── docker-compose.yml     # Docker Compose configuration
-└── README.txt             # This file
-```
 
 ## Installation
 
@@ -171,6 +158,7 @@ Create a `.env` file in both `my-app-react` and `my-backend-express` directories
   npm start
   ```
 - Ensure PostgreSQL is running locally and configured with the `.env` credentials.
+- Access the application at `https://localhost:5173/`
 
 ### Run with Docker
 - From the project root, use Docker Compose to start all services:
